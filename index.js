@@ -16,8 +16,18 @@ function artifact (a) {
   return roi.get({ endpoint: `${BASE_URL}artifacts/${a}` });
 }
 
+function groupArtifact (g, a) {
+  return roi.get({ endpoint: `${BASE_URL}artifacts/${g}/${a}` });
+}
+
+function search (term) {
+  return roi.get({ endpoint: `https://clojars.org/search?q=${term}&format=json` });
+}
+
 module.exports = {
   user,
   group,
-  artifact
+  artifact,
+  groupArtifact,
+  search
 };
