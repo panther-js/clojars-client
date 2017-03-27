@@ -25,15 +25,21 @@ npm install clojars-client -S
 const client = require('clojars-client');
 
 client.user('toby')
-.then(console.log)
+.then(response => {
+  console.log(response.body);
+})
 .catch(console.log);
 
 client.group('org.clojars')
-.then(console.log)
+.then(response => {
+  console.log(response.body);
+})
 .catch(console.log);
 
 client.artifact('leiningen')
-.then(console.log)
+.then(response => {
+  console.log(response.body);
+})
 .catch(console.log);
 ```
 
