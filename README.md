@@ -41,6 +41,18 @@ client.artifact('leiningen')
   console.log(response.body);
 })
 .catch(console.log);
+
+client.groupArtifact('org.clojars', 'xeqi')
+.then(response => {
+  console.log(response.body);
+})
+.catch(console.log);
+
+client.search('lein')
+.then(response => {
+  console.log(response.body);
+})
+.catch(console.log);
 ```
 
 ## You can use to
@@ -48,3 +60,5 @@ client.artifact('leiningen')
 * Get informations about a user.
 * Get informations about a group.
 * Get informations about a artifact.
+* Search by group and artifact.
+* Artifact search by name.
