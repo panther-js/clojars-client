@@ -1,5 +1,7 @@
 # clojars-client
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/panther-js/clojars-client.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/panther-js/clojars-client.svg?branch=master)](https://travis-ci.org/panther-js/clojars-client)
 [![dependencies Status](https://david-dm.org/panther-js/clojars-client/status.svg)](https://david-dm.org/panther-js/clojars-client)
 
