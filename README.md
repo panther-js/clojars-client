@@ -31,9 +31,14 @@ client.user('toby')
 client.group('org.clojars')
 .then(console.log)
 .catch(console.log);
+
+client.artifact('leiningen')
+.then(console.log)
+.catch(console.log);
 ```
 
 ## You can use to
 
 * Get informations about a user.
 * Get informations about a group.
+* Get informations about a artifact.

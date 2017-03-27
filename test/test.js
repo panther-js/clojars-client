@@ -28,3 +28,16 @@ test('group.', (t) => {
       t.fail(e);
     });
 });
+
+test('artifact.', (t) => {
+  client.artifact('leiningen')
+    .then(response => {
+      const content = JSON.parse(response.body);
+      t.equal(content.jar_name, 'leiningen', 'leiningen found.');
+      t.end();
+    })
+    .catch(e => {
+      console.error(e.stack);
+      t.fail(e);
+    });
+});

@@ -12,7 +12,12 @@ function group (g) {
   return roi.get({ endpoint: `${BASE_URL}groups/${g}` });
 }
 
+function artifact (a) {
+  return roi.get({ endpoint: `${BASE_URL}artifacts/${a}` });
+}
+
 module.exports = {
   user,
-  group
+  group,
+  artifact
 };
