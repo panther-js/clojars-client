@@ -1,6 +1,6 @@
 {
   "name": "clojars-client",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A simple client for the clojars REST API.",
   "main": "index.js",
   "homepage": "https://github.com/panther-js/clojars-client#readme",
